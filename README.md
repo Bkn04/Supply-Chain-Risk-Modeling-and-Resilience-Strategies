@@ -57,8 +57,52 @@ A Bayesian Network is a graphical model used to represent probabilistic relation
 2. **Draw directed edges:** Use arrows to illustrate causal relationships between events  
    (e.g., `Earthquake → Factory Shutdown`, `Earthquake → Transport Delay`).
 3. **Assign probabilities:** Estimate conditional probabilities based on historical data or expert judgment, indicating the likelihood of each event given its dependencies.
-4. **Simulated output:** Run the attached code to make simulations, 
+4. **Simulated output:** Run the attached Bayesian Network.py code to make simulations and visualize them, getting the output like below:
 
+![output](https://github.com/user-attachments/assets/15e9da36-0ee1-43f9-8814-4387393c54a6)
+
+## Step 3: Design Resilience Strategies
+
+### What is a Resilience Strategy?
+
+Resilience strategies refer to proactive contingency plans designed to mitigate the impact of supply chain disruptions. Common examples include:
+
+- **Dual sourcing:** Procure raw materials from suppliers in different regions to reduce geographic risk.
+- **Safety stock:** Maintain emergency inventory to buffer against supply interruptions.
+- **Dynamic logistics routes:** Pre-plan alternative transportation paths in case of disruptions.
+
+### Example: Dual Sourcing Strategy (could be changed based on real cases):
+
+- **Primary Supplier:** Southeast Asia factory – lower cost but higher earthquake risk.
+- **Backup Supplier:** Mexico factory – 20% more expensive but with lower risk exposure.
+
+## Step 4: Simulate Strategy Effectiveness
+
+After modeling an earthquake event, simulate how the dual sourcing strategy can reduce potential financial losses.
+This step involves implementing code-based simulations to quantify the effectiveness of each strategy, and the results of average 1000 runs are posted below:
+
+![截屏2025-04-07 11 02 47](https://github.com/user-attachments/assets/68977793-ad18-4b93-9694-91a7372e372e)
+
+From the result we could see that: dual sourcing outperforms single sourcing by nearly 50%
+
+## Technical Workflow
+
+This project follows a structured process to address supply chain disruptions, consisting of five main steps:
+
+1. **Risk Identification**  
+   Identify key disruptive events (e.g., earthquakes, strikes, raw material price surges) and assess their likelihood.
+
+2. **Bayesian Network Modeling**  
+   Construct a Bayesian Network to represent causal relationships and probabilities between events (e.g., Earthquake → Factory Shutdown).
+
+3. **Resilience Strategy Design**  
+   Propose mitigation strategies—such as dual sourcing, safety stock, or backup transportation routes—to reduce potential losses.
+
+4. **Monte Carlo Simulation**  
+   Run repeated randomized simulations to evaluate how each strategy performs under different risk scenarios.
+
+5. **Strategy Outcome Comparison**  
+   Compare simulation results across strategies (e.g., single sourcing vs. dual sourcing) to identify the optimal approach.
 
 
 
